@@ -15,12 +15,11 @@ local function getLinkPositionPointer()
 	elseif GameID == "GZLE99" then baseAddress = 0x803440C
 	elseif GameID == "GZLJ01" then baseAddress = 0x0
 	end
-	MsgBox("This is GameID")
 	return baseAddress
 end
 Pointers.getLinkPositionPointer = getLinkPositionPointer
 
-local function getAccelerationPointer()
+local function getAccelPointer()
 	setGameId()
 	local baseAddress
 	if GameID == "GZLEO1" then baseAddress = 0x803CA410
@@ -30,7 +29,7 @@ local function getAccelerationPointer()
 	baseAddress = GetPointerNormal(baseAddress)
 	return baseAddress
 end
-Pointers.getAccelerationPointer = getAccelerationPointer
+Pointers.getAccelPointer = getAccelPointer
 
 local function getAnglePointer()
 	setGameId()

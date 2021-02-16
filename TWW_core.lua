@@ -14,11 +14,11 @@ local function getPosPointer()
 end
 core.getPosPointer = getPosPointer
 
-local function getAcceleration() --Offset might not work on Japanese
-	local address = Pointers.getAccelerationPointer()
+local function getAccel() --Offset might not work on Japanese
+	local address = Pointers.getAccelPointer()
 	return {Speed = ReadValueFloat(address + 0x35BC)}
 end
-core.getAcceleration = getAcceleration
+core.getAccel = getAccel
 
 local function getAngles() --Facing Angle Offset might not work on Japanese
 	local address = Pointers.getAnglePointer()
