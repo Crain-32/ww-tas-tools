@@ -14,6 +14,10 @@ local function getPosPointer()
 end
 core.getPosPointer = getPosPointer
 
+--local function getYRotation https://github.com/LagoLunatic/WW-Hacking-Docs/blob/35683c1dd823fb95011f66f6d1d7056844a30bf0/RAM%20Map.txt#L1135
+
+--local function getPotentialSpeed()
+
 local function getAccel() --Offset might not work on Japanese
 	local address = Pointers.getAccelPointer()
 	return {Speed = ReadValueFloat(address + 0x35BC)}
@@ -54,5 +58,27 @@ local function getAirRemaining()
 end
 core.getAirRemaining = getAirRemaining
 
+--local function getInventoryIndex()
 
+--local function getEquipedItems() https://github.com/LagoLunatic/WW-Hacking-Docs/blob/35683c1dd823fb95011f66f6d1d7056844a30bf0/RAM%20Map.txt#L412
+
+--local function getSpoil/Delivery/BaitBagItems() https://github.com/LagoLunatic/WW-Hacking-Docs/blob/35683c1dd823fb95011f66f6d1d7056844a30bf0/RAM%20Map.txt#L498
+
+--local function getAnimationState()
+
+--local functionn getAnimationSet() https://github.com/LagoLunatic/WW-Hacking-Docs/blob/35683c1dd823fb95011f66f6d1d7056844a30bf0/RAM%20Map.txt#L668
+
+--local function getStage()
+
+--local function getRoom()
+
+--local function getBalladLocation https://github.com/LagoLunatic/WW-Hacking-Docs/blob/35683c1dd823fb95011f66f6d1d7056844a30bf0/RAM%20Map.txt#L54
+
+--local function getStagePreload https://github.com/LagoLunatic/WW-Hacking-Docs/blob/35683c1dd823fb95011f66f6d1d7056844a30bf0/RAM%20Map.txt#L98
+
+--local function getStageInfo https://github.com/LagoLunatic/WW-Hacking-Docs/blob/35683c1dd823fb95011f66f6d1d7056844a30bf0/RAM%20Map.txt#L739
+
+--local function getPlayerState https://github.com/LagoLunatic/WW-Hacking-Docs/blob/35683c1dd823fb95011f66f6d1d7056844a30bf0/RAM%20Map.txt#L867
+
+--local function crrArrowSelection https://github.com/LagoLunatic/WW-Hacking-Docs/blob/35683c1dd823fb95011f66f6d1d7056844a30bf0/RAM%20Map.txt#L1133
 return core
