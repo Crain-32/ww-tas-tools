@@ -1,0 +1,28 @@
+daPy_lk_c.mHeldItemType Reference Offset 0x3560, ushort
+
+0x10 = Empty Hand?
+0x101 = ??? Hero's Sword?
+0x103 = Sword (Full Power)
+0x20 = Telescope
+0x21 = Tingle Tuner
+0x22 = Wind Waker
+0x23 = Regular Pictobox
+0x25 = Grappling Hook
+0x26 = Deluxe Pictobox
+0x27 = First Bow
+0x2d = Boomerang
+0x2f = Hookshot
+0x33 = Skull Hammer
+0x34 = Deku Leaf
+0x35 = Fire and Ice
+0x36 = Light Arrows
+0x50 = Empty Bottle
+0x51 = Red Potion
+0x52 = Green Potion?
+0x53 = Blue Potion?
+0x54 = Half Soup
+0x55 = Full Soup
+0x56 = Normal Water Bottle
+0x57 = Fairy Bottle
+0x58 = Forest Fairy Bottle
+0x59 = Forest Water
