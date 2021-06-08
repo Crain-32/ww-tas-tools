@@ -7,7 +7,17 @@ local function setGameId()
 	GameID = ReadValueString(baseAddress, 6) --Fails
 end
 
+local function getLinkObjPointer()
+	setGameId()
+	local baseAddress
+	if GameID == "GZLE01" then baseAddress = 0x803CA410
+	elseif GameID == "GZLE99" then baseAddress = 0x803CA410
+	elseif GameID == "GZLJ01" then baseAddress = 0x0
+	end
+	return baseAddress
+end
 
+Pointers.getLinkPositionPointer = getLinkPositionPointer
 local function getLinkPositionPointer()
 	setGameId()
 	local baseAddress

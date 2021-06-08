@@ -18,6 +18,12 @@ core.getPosPointer = getPosPointer
 
 --local function getPotentialSpeed()
 
+local function getLinkHeldItem()
+	local address = Pointers.getLinkObjPointer()
+	return ReadValue16(address + 3560)
+end
+core.getLinkHeldItem = getLinkHeldItem
+
 local function getAccel() --Offset might not work on Japanese
 	local address = Pointers.getAccelPointer()
 	return {Speed = ReadValueFloat(address + 0x35BC)}
